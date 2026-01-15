@@ -1,0 +1,21 @@
+name: deep_link_client
+description: "A deep link client interface"
+version: 1.0.0
+publish_to: none
+resolution: workspace
+
+environment:
+  sdk: ^3.10.4
+  flutter: ">=1.17.0"
+
+dependencies:
+  equatable: ^2.0.8
+  flutter:
+    sdk: flutter
+  rxdart: ^0.28.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^1.0.4
+  very_good_analysis: ^10.0.0

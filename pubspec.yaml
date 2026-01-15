@@ -29,3 +29,5 @@ workspace:
   - packages/common/app_launcher
   - packages/common/app_logger
   - packages/common/storage
+
+  - packages/deep_link_client/deep_link_client
