@@ -31,4 +31,7 @@ workspace:
   - packages/common/app_utils
   - packages/common/storage
 
+  - packages/platform/permission_client
+  - packages/platform/package_info_client
+
   - packages/deep_link_client/deep_link_client
