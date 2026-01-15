@@ -26,4 +26,5 @@ flutter:
 
 # internal packages
 workspace:
+  - packages/common/app_logger
   - packages/common/storage
