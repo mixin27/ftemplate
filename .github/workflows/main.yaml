@@ -61,3 +61,12 @@ jobs:
 
       - name: 🕵️ Analyze
         run: flutter analyze lib test
+
+      - name: 🕵️ Test
+        run: |
+          git ls-files '**/pubspec.yaml' | xargs -I {} dirname {} | while read dir; do
+            if [ -d "$dir/test" ]; then
+              echo "Running tests in $dir..."
+              (cd "$dir" && flutter test)
+            fi
+          done
