@@ -11,7 +11,7 @@ flutter analyze
 
 # Run Flutter tests
 echo "Running flutter test..."
-flutter test
+flutter test --coverage --test-randomize-ordering-seed random
 
 # Check the exit status of the previous command (flutter analyze and test)
 if [ $? -ne 0 ]; then
