@@ -11,13 +11,7 @@ flutter analyze
 
 # Run Flutter tests
 echo "Running flutter test..."
-git ls-files '**/pubspec.yaml' | xargs -I {} dirname {} | while read dir; do
-    if [ -d "$dir/test" ]; then
-        echo "Running tests in $dir..."
-        (cd "$dir" && flutter test)
-    fi
-done
-# flutter test --coverage --test-randomize-ordering-seed random
+flutter test --coverage --test-randomize-ordering-seed random
 
 # Check the exit status of the previous command (flutter analyze and test)
 if [ $? -ne 0 ]; then
