@@ -17,3 +17,15 @@ else
     echo "Flutter analyze passed."
     exit 0 # Allow the commit
 fi
+# Run Flutter tests
+echo "Running flutter test..."
+flutter test
+
+# Check the exit status of the previous command (flutter test)
+if [ $? -ne 0 ]; then
+    echo "Flutter test failed. Please fix the issues and try again."
+    exit 1
+else
+    echo "Flutter test passed."
+    exit 0 # Allow the commit
+fi
