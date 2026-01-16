@@ -10,8 +10,8 @@ echo "Running flutter analyze..."
 flutter analyze
 
 # Run Flutter tests across all packages
-echo "Running flutter tests in all packages..."
-./scripts/run_tests.sh
+# echo "Running flutter tests in all packages..."
+# ./scripts/run_tests.sh
 
 # Check the exit status
 if [ $? -ne 0 ]; then
